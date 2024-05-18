@@ -1,0 +1,100 @@
+:root {
+    --blanquito: #f1ecff;
+    --turquesa: #a5f0df;
+    --grisesito: #aaada2;
+    --rosa: #f8bcb5;
+    --Oscuro: #886297;
+    --azul: #c981b7;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--blanquito);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #f5fafa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 500px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: var(--azul);
+    text-shadow: 1px 1px 2px var(--Oscuro);
+}
+
+.Golosinas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Golosinas>li {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--turquesa);
+    border: 1px solid var(--grisesito);
+    border-radius: 25px;
+    margin-bottom: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.listContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.puesto,
+.nombre,
+.votos {
+    -webkit-text-stroke: 1px var(--Oscuro);
+}
+
+.puesto {
+    font-weight: bold;
+    font-size: 25px;
+    color: var(--rosa);
+    width: 30%;
+}
+
+.nombre {
+    margin-left: 10px;
+    font-size: 25px;
+    color: var(--azul);
+    width: 40%;
+}
+
+.votos {
+    font-weight: bold;
+    font-size: 23px;
+    color: var(--rosa);
+    width: 20%;
+}
+
+.imagen {
+    display: flex;
+    width: 0px;
+    height: 0px;
+    border-radius: 10%;
+    transition: all 0.5s ease-in-out;
+}
+
+.Golosinas li:hover > .imagen {
+    width: auto;
+    height: 200px;
+    margin: auto;
+}
