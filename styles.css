@@ -66,23 +66,23 @@ h1 {
 
 .puesto {
     font-weight: bold;
-    font-size: 25px;
+    font-size: 150%;
     color: var(--rosa);
-    width: 30%;
+    width: 100%;
 }
 
 .nombre {
-    margin-left: 10px;
-    font-size: 25px;
+    font-weight: bold;
+    font-size: 150%;
     color: var(--azul);
-    width: 40%;
+    width: 100%;
 }
 
 .votos {
     font-weight: bold;
-    font-size: 23px;
+    font-size: 95%;
     color: var(--rosa);
-    width: 20%;
+    width: 100%;
 }
 
 .imagen {
